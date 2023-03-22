@@ -9,6 +9,7 @@ import android.widget.TextView
 import android.content.Intent
 import android.net.Uri
 import android.view.MenuItem
+import android.widget.RatingBar
 
 
 class MainActivity : AppCompatActivity() {
@@ -24,12 +25,25 @@ class MainActivity : AppCompatActivity() {
 
         when(item.itemId){
             R.id.item1 ->{
+                val intent = Intent(this,AboutBmi::class.java)
+                startActivity(intent)
+                return true
 
             }
 
             R.id.item2->{
+                val intent =Intent(this,chartBmi::class.java)
+                startActivity(intent)
+                return true
+
+
 
             }
+
+            R.id.rating ->{
+
+            }
+
 
             R.id.contact ->{
 
@@ -38,6 +52,7 @@ class MainActivity : AppCompatActivity() {
             R.id.dail ->{
                 val intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:6204854219"))
                 startActivity(intent)
+
             }
 
             R.id.call ->{
@@ -47,12 +62,24 @@ class MainActivity : AppCompatActivity() {
 
             }
 
-            R.id.email->{
+            R.id.email-> {
+                val intent = Intent(Intent.ACTION_SENDTO)
+                intent.data = Uri.parse("mailTo:")
+                intent.putExtra(Intent.EXTRA_EMAIL, "iammravinashkumar@gmail.com")
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Leave to Attend Friend meeting")
+                intent.putExtra(Intent.EXTRA_TEXT, "")
+                startActivity(intent)
+
+
+
 
 
             }
 
             R.id.web->{
+                val intent =Intent(this,WebViewActivity::class.java)
+                startActivity(intent)
+
 
 
 
