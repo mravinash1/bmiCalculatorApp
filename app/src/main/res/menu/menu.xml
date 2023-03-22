@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item1"
+        android:title="About Bmi"/>
+       <item
+        android:id="@+id/item2"
+        android:title="Chart Bmi"/>
+
+    <item android:id="@+id/web"
+        android:title="Webview"/>
+
+
+    <item  android:title="contact us "
+        android:id="@+id/contact">
+        <menu>
+            <item android:id="@+id/dail"
+                android:title="Dail"/>
+
+            <item android:id="@+id/call"
+                android:title="call"/>
+
+            <item android:id="@+id/email"
+                android:title="Email"/>
+
+
+
+        </menu>
+    </item>
+
+
+
+
+
+</menu>
