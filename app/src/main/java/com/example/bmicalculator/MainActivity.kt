@@ -12,12 +12,6 @@ import android.view.MenuItem
 
 
 class MainActivity : AppCompatActivity() {
-//    lateinit var binding: ActivityMainBinding
-//
-//    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-//        super.onCreate(savedInstanceState, persistentState)
-//        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-//    }
 
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
